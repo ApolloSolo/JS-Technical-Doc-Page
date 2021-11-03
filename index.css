@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+}
+.bg{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+h1,
+h2{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.main-container{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    overflow: visible;
+}
+@media all and(min-width: 800px){
+    .main-container{
+        display: grid;
+        grid-template-columns: 25% 75%;
+        overflow: visible;     
+    }
+}
+
+.left{
+    background-color: aliceblue;
+    border-right: solid rgb(95, 95, 95) 1px;
+    max-height: 100vh;
+    overflow-x: scroll;
+}
+
+.right{
+    background-color: rgb(206, 240, 255);
+    padding: 1rem;
+    max-height: 100vh;
+    overflow-x: scroll;
+}
+
+#main-doc{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-link{
+    padding: 1rem 1rem 1rem 2.5rem;
+    border-top: solid rgb(124, 124, 124) 1px;
+}
+
+.nav-link:hover{
+    background-color: rgb(135, 197, 222);
+    font-weight: 600;
+}
+h1{
+    padding: 0 1rem;
+    text-align: center; 
+}
+
+.content-list, li{
+    padding-bottom: 1rem;
+}
